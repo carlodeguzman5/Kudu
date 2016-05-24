@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="package org.app.compsat.compsatapplication.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#f3f3f3">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/loginUser">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/image"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/loginUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Username"
+        android:textColor="#FF5E49"
+        android:textColorHint="#FF5E49"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/loginpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20px"
+        android:paddingLeft="20px"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#FF5E49"
+        android:textColorHint="#FF5E49"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/loginUser"
+        android:layout_alignLeft="@+id/loginUser"
+        android:layout_alignStart="@+id/loginUser"
+        android:layout_alignRight="@+id/loginUser"
+        android:layout_alignEnd="@+id/loginUser" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:textColor="#F2F2F2"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:background="#FF5E49"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/remember"
+        android:layout_alignRight="@+id/loginpass"
+        android:layout_alignEnd="@+id/loginpass"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="#FF5E49"
+        android:textAlignment="center"
+        android:layout_below="@+id/loginpass"
+        android:layout_alignLeft="@+id/loginpass"
+        android:layout_alignStart="@+id/loginpass" />
+
+    <Button
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:id="@+id/button2"
+        android:background="@android:color/transparent"
+        android:textColor="#f3f3f3"
+        android:onClick="register"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"/>
+
+</RelativeLayout>

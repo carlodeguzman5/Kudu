@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp">
+
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:id="@+id/lineSeparator"
+        android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/separator"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="#ff2ec4b6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/lineSeparator"
+            android:text="Month" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date"
+            android:id="@+id/date"
+            android:textAlignment="center"
+            android:textColor="#383B37"
+            android:textSize="20sp"
+            android:layout_below="@+id/event_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event"
+            android:id="@+id/event_name"
+            android:textColor="#ff19647e"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_below="@+id/separator"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
